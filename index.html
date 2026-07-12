@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CSS Glassmorphism Generator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+<header>
+
+<div>
+
+<h1>CSS Glassmorphism Generator</h1>
+
+<p>Create beautiful glass effects with live preview.</p>
+
+</div>
+
+<button id="randomBtn">
+
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+
+Random
+
+</button>
+
+</header>
+
+<div class="wrapper">
+
+<div class="controls">
+
+<div class="control">
+
+<label>Blur</label>
+
+<input type="range" id="blur" min="0" max="40" value="20">
+
+<span id="blurValue">20px</span>
+
+</div>
+
+<div class="control">
+
+<label>Opacity</label>
+
+<input type="range" id="opacity" min="5" max="100" value="25">
+
+<span id="opacityValue">25%</span>
+
+</div>
+
+<div class="control">
+
+<label>Border Radius</label>
+
+<input type="range" id="radius" min="0" max="60" value="25">
+
+<span id="radiusValue">25px</span>
+
+</div>
+
+<div class="control">
+
+<label>Border Width</label>
+
+<input type="range" id="border" min="0" max="8" value="1">
+
+<span id="borderValue">1px</span>
+
+</div>
+
+<div class="control">
+
+<label>Shadow Blur</label>
+
+<input type="range" id="shadow" min="0" max="80" value="30">
+
+<span id="shadowValue">30px</span>
+
+</div>
+
+<div class="control">
+
+<label>Glass Color</label>
+
+<input type="color" id="glassColor" value="#ffffff">
+
+</div>
+
+<div class="buttons">
+
+<button id="copyBtn">
+
+<i class="fa-solid fa-copy"></i>
+
+Copy CSS
+
+</button>
+
+<button id="resetBtn">
+
+<i class="fa-solid fa-rotate"></i>
+
+Reset
+
+</button>
+
+</div>
+
+</div>
+
+<div class="preview">
+
+<div class="glassCard" id="glassCard">
+
+<h2>Glass Card</h2>
+
+<p>
+
+Beautiful modern glassmorphism UI.
+
+</p>
+
+</div>
+
+<textarea id="cssOutput" readonly></textarea>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
